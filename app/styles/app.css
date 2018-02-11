@@ -1,4 +1,12 @@
 html
+
+.card-sm {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  height: 50px;
+  margin: 13px;
+  border-radius: 5px;
+  background: white;
+}
 header {
   text-align: center;
   margin: 30px;
@@ -15,4 +23,12 @@ body {
   height: 300px;
   text-align: center;
 
+}
+
+.card-sm {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  height: 50px;
+  margin: 13px;
+  border-radius: 5px;
+  background: white;
 }
