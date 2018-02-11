@@ -2,5 +2,8 @@
 {{#each list.cards as |card|}}
   <div class="card-sm">
     {{card.name}}
+    <div class='pull-right' {{action 'deleteCard' card}}>
+      <span class='glyphicon glyphicon-remove' aria-hidden="true"></span>
+    </div>
   </div>
 {{/each}}
