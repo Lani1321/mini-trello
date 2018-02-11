@@ -8,3 +8,11 @@ html
 body {
   margin: 30px;
 }
+
+.card {
+  background-color: #18deba;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  height: 300px;
+  text-align: center;
+
+}
