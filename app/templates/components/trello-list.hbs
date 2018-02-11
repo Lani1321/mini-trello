@@ -11,5 +11,19 @@
   </div>
   {{/each}}
 
-
+{{!-- Add a new list --}}
+  <div class="col-md-3 d-flex flex-wrap">  
+    <div class="card">
+      <div class="new-list-box">
+        {{input
+          type="text"
+          id="new-list"
+          placeholder="Add a list..."
+          value=newList
+          action="createList"
+          class= "card-input"
+        }}
+      </div>
+    </div>
+  </div> 
 </div>
