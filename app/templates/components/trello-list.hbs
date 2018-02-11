@@ -1,0 +1,13 @@
+<div class="row d-flex align-items-stretch list-col">
+
+  <!-- Loop through each list -->
+  {{#each trelloList as |list|}}
+  <div class="col-md-3 d-flex flex-wrap">  
+    <div class="card">
+      <strong> {{list.name}} </strong>
+    </div>   
+  </div>
+  {{/each}}
+
+
+</div>
