@@ -1,12 +1,4 @@
 html
-
-.card-sm {
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  height: 50px;
-  margin: 13px;
-  border-radius: 5px;
-  background: white;
-}
 header {
   text-align: center;
   margin: 30px;
@@ -31,4 +23,28 @@ body {
   margin: 13px;
   border-radius: 5px;
   background: white;
+}
+
+.new-list-box {
+  text-align: center;
+}
+
+/*.card-input {
+  width: 235px;
+}*/
+
+input[type=text]:focus {
+  /*background-color: lightblue;*/
+  width: 235px;
+  /*border: 0px;*/
+  border: 3px ;
+
+}
+
+input[type=text]{
+  height: 50px;
+  border: 0px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+
 }
