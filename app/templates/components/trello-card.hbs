@@ -12,7 +12,7 @@
   }}
 {{/if}}
 
-  <div class="card-sm" {{action 'openModal'}}>
-    {{card.name}}
+  <div class="card-sm" id="remove-default-card-{{card.id}}" {{action 'openModal'}}>
+    <div class='card-name'>{{card.name}}</div>
   </div>
 {{/each}}

@@ -1,22 +1,55 @@
 html
+@font-face {
+  font-family: 'custom';
+  src: url('Sweet Hipster.ttf');
+}
+
 header {
   text-align: center;
   margin: 30px;
+  padding-bottom: 50px;
+  border-radius: .25rem;
+  padding-top: 10px;
+  color: grey;
+/*  font-family: 'custom';*/
 }
 
 html
 body {
-  margin: 30px;
+  margin: 40px;
+  background-image: url("marble.jpg");
 }
 
-/**
- * Cards
- */
+h1 {
+  padding-top: 20px;
+}
+
+#card-description {
+  margin-top: 28px;
+}
+
+.header {
+  width: 400px;
+  height: 100px;
+  background: #FEF3F1;
+  margin-left: auto;
+  margin-right: auto;
+}
 .card {
-  background-color: #18deba;
+  background-color: #FEF3F1;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   height: 300px;
   text-align: center;
+}
+
+#card-color {
+  background-color: #FEF3F1;
+  color: grey;
+  padding-top: 20px;
+}
+
+.card-name {
+  padding: 8px;
 }
 
 .card-sm {
@@ -27,13 +60,25 @@ body {
   background: white;
 }
 
-.new-list-box {
+.new-list-box input[type=text] {
   text-align: center;
+  background-color: #FEF3F1;
+  width: 300px;
+}
+
+.new-list-box input[type=text]:focus {
+  text-align: center;
+  background-color: #FEF3F1;
+  width: 346px;
+  border-color: white;
+  outline-color: white;
 }
 
 input[type=text]:focus {
-  width: 235px;
+/*  width: 235px;*/
   border: 3px ;
+  width: 321px;
+  outline-color: grey;
 }
 
 input[type=text]{
@@ -41,19 +86,42 @@ input[type=text]{
   border: 0px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
-
 }
+
+.edit-card-name input[type=text]:focus {
+/*  width: 235px;*/
+  border: 3px ;
+  width: 321px;
+  outline-color: grey;
+}
+
+.edit-card-name input[type=text]{
+  height: 30px;
+  border: 0px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  background-color: white;
+}
+
 
 .edit_hover_icon i{
   visibility:hidden;
 }
+
 .edit_hover_icon:hover i {
  visibility:visible;
 }
 
-/**
- * Modal
- */
+
+#remove-icon-1 {
+  display: none;
+}
+
+#remove-default-card-1 {
+  display: none;
+}
+
+/***** Modal *****/
 .modal-background {
   background: rgba(30, 30, 30, 0.5);
   position: fixed;
@@ -63,37 +131,37 @@ input[type=text]{
   right: 0;
   z-index: 15;
 }
+
 .modal-frame {
     position: fixed;
     top: 25%;
     left: 25%;
     border: 1px solid #333;
-    background: white;
-    height: 300px;
+    background: #FEF3F1;
+    height: 345px;
     width: 600px;
   }
   .modal-title {
     position: absolute;
     top: 0;
     width: 100%;
-    height:30px;
+    height: 50px;
     text-align: center;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid grey;
+    background-color: #FEF3F1;
   }
   .modal-body {
-    margin-top: 40px;
+    margin-top: 60px;
     padding: 5px;
     overflow: scroll;
     height: 65%;
   }
   .modal-footer {
     height: 30px;
+    padding: 2px;
   }
 
 .modal-description {
   text-align: left;
 }
 
-#remove-icon-1{
-  display: none;
-}
