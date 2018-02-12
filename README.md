@@ -1,6 +1,6 @@
 # mini-trello
 
-Mini Trello is a light-weight version of Trello built in EmberJS.  
+Mini Trello is a light-weight version of Trello built in EmberJS.  A live version is located here: [https://dry-basin-15413.herokuapp.com](https://dry-basin-15413.herokuapp.com/)
 
 ## Prerequisites
 
