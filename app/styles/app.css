@@ -14,7 +14,6 @@ body {
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   height: 300px;
   text-align: center;
-
 }
 
 .card-sm {
@@ -29,16 +28,9 @@ body {
   text-align: center;
 }
 
-/*.card-input {
-  width: 235px;
-}*/
-
 input[type=text]:focus {
-  /*background-color: lightblue;*/
   width: 235px;
-  /*border: 0px;*/
   border: 3px ;
-
 }
 
 input[type=text]{
@@ -48,3 +40,39 @@ input[type=text]{
   transition: width 0.4s ease-in-out;
 
 }
+
+.modal-background {
+  background: rgba(30, 30, 30, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 15;
+}
+.modal-frame {
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    border: 1px solid #333;
+    background: white;
+    height: 300px;
+    width: 600px;
+  }
+  .modal-title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height:30px;
+    text-align: center;
+    border-bottom: 2px solid black;
+  }
+  .modal-body {
+    margin-top: 40px;
+    padding: 5px;
+    overflow: scroll;
+    height: 65%s
+  }
+  .modal-footer {
+    height: 30px;
+  }
