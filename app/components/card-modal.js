@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   isEditingName: false,
+  isEditingDescription: false,
 
   actions: {
     closeModal: function() {
@@ -15,6 +16,9 @@ export default Ember.Component.extend({
     },
     toggleEdit: function() {
       this.toggleProperty('isEditingName');
+    }, 
+    toggleEditDescription: function() {
+      this.toggleProperty('isEditingDescription');
     }
   }
 });
