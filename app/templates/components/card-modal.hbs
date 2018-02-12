@@ -1,7 +1,16 @@
 <div class="modal-background">
   <div class="modal-frame">
     <div class="modal-title">
-      {{title}}
+      
+      {{!-- Edit card name  --}}
+      {{#if isEditingName}}
+        <form {{action 'toggleEdit' on="submit"}}>
+          {{input value=card.name placeholder="Card Name"}}
+          <button {{action 'toggleEdit'}}>Done</button>
+        </form>
+      {{else}}
+        {{title}} <i {{ action 'toggleEdit'}} class="glyphicon glyphicon-pencil"></i>
+      {{/if}}
     </div>
     <div class="modal-body">
       {{body}}
