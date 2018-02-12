@@ -1,8 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  isEditingName: false,
+
   actions: {
-    closeModal: function(){
+    closeModal: function() {
       this.set('enabled', false);
     },
     deleteCard: function(card) {
@@ -11,5 +13,8 @@ export default Ember.Component.extend({
       }
       this.set('enabled', false);
     },
+    toggleEdit: function() {
+      this.toggleProperty('isEditingName');
+    }
   }
 });
