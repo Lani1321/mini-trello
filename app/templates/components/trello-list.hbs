@@ -8,7 +8,7 @@
 
       {{!-- TODO: if list name is default list then dont allow delete --}}
       <div class='pull-right' {{action 'deleteList' list}}>
-        <span class='glyphicon glyphicon-remove' aria-hidden="true"></span>
+        <span class='glyphicon glyphicon-remove' id="remove-icon-{{list.id}}" aria-hidden="true"></span>
       </div>
       {{trello-card list=list}}
       {{create-card list=list}}
@@ -32,3 +32,4 @@
     </div>
   </div> 
 </div>
+

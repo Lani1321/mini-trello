@@ -9,6 +9,9 @@ body {
   margin: 30px;
 }
 
+/**
+ * Cards
+ */
 .card {
   background-color: #18deba;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
@@ -48,6 +51,9 @@ input[type=text]{
  visibility:visible;
 }
 
+/**
+ * Modal
+ */
 .modal-background {
   background: rgba(30, 30, 30, 0.5);
   position: fixed;
@@ -86,4 +92,8 @@ input[type=text]{
 
 .modal-description {
   text-align: left;
+}
+
+#remove-icon-1{
+  display: none;
 }
