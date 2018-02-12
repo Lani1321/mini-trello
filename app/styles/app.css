@@ -46,6 +46,7 @@ h1 {
   background-color: #FEF3F1;
   color: grey;
   padding-top: 20px;
+  overflow: scroll;
 }
 
 .card-name {
@@ -58,6 +59,7 @@ h1 {
   margin: 13px;
   border-radius: 5px;
   background: white;
+  overflow: scroll;
 }
 
 .new-list-box input[type=text] {
@@ -117,7 +119,7 @@ input[type=text]{
   display: none;
 }
 
-#remove-default-card-1 {
+.list-id-1 #remove-default-card-1 {
   display: none;
 }
 
@@ -149,6 +151,7 @@ input[type=text]{
     text-align: center;
     border-bottom: 2px solid grey;
     background-color: #FEF3F1;
+    overflow: scroll;
   }
   .modal-body {
     margin-top: 60px;
