@@ -6,7 +6,6 @@
       {{#if isEditingName}}
         <form {{action 'toggleEditName' on="submit"}}>
           <div class="edit-card-name">{{input value=card.name placeholder="Card Name"}}</div>
-          {{!-- {{input value=card.name placeholder="Card Name"}} --}}
         </form>
       {{else}}
         {{title}} <i {{ action 'toggleEditName'}} class="glyphicon glyphicon-pencil"></i>
