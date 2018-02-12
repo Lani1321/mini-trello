@@ -41,6 +41,13 @@ input[type=text]{
 
 }
 
+.edit_hover_icon i{
+  visibility:hidden;
+}
+.edit_hover_icon:hover i {
+ visibility:visible;
+}
+
 .modal-background {
   background: rgba(30, 30, 30, 0.5);
   position: fixed;
@@ -71,8 +78,12 @@ input[type=text]{
     margin-top: 40px;
     padding: 5px;
     overflow: scroll;
-    height: 65%s
+    height: 65%;
   }
   .modal-footer {
     height: 30px;
   }
+
+.modal-description {
+  text-align: left;
+}

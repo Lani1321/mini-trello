@@ -4,16 +4,23 @@
       
       {{!-- Edit card name  --}}
       {{#if isEditingName}}
-        <form {{action 'toggleEdit' on="submit"}}>
+        <form {{action 'toggleEditName' on="submit"}}>
           {{input value=card.name placeholder="Card Name"}}
-          <button {{action 'toggleEdit'}}>Done</button>
         </form>
       {{else}}
-        {{title}} <i {{ action 'toggleEdit'}} class="glyphicon glyphicon-pencil"></i>
+        {{title}} <i {{ action 'toggleEditName'}} class="glyphicon glyphicon-pencil"></i>
       {{/if}}
     </div>
+
+    {{!-- Edit Card Description --}}
     <div class="modal-body">
-      {{body}}
+      {{#if isEditingDescription}}
+        <form {{action 'toggleEditDescription' on="submit"}}>
+          {{input value=card.description placeholder="Card Description"}}
+        </form>
+      {{else}}
+        <div class="modal-description"><i {{ action 'toggleEditDescription'}} class="glyphicon glyphicon-align-left"></i>        {{body}}</div>
+      {{/if}}
     </div>
     <div class="modal-footer">
       <button {{action 'closeModal'}} type="button" class="btn btn-default" data-dismiss="modal">Close</button>
