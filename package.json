@@ -15,6 +15,7 @@
     "test": "ember test"
   },
   "devDependencies": {
+    "babel-plugin-transform-es2015-block-scoping": "^6.24.1",
     "bootstrap": "^3.3.7",
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^3.0.0",
