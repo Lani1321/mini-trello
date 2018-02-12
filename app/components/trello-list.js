@@ -20,6 +20,6 @@ export default Ember.Component.extend({
 
     deleteList: function(list) {
       this.trelloList.removeObject(list);
-    }, 
+    }
   }
 });
