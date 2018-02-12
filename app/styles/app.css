@@ -63,13 +63,13 @@ h1 {
 .new-list-box input[type=text] {
   text-align: center;
   background-color: #FEF3F1;
-  width: 300px;
+  width: 100%;
 }
 
 .new-list-box input[type=text]:focus {
   text-align: center;
   background-color: #FEF3F1;
-  width: 346px;
+  width: 100%;
   border-color: white;
   outline-color: white;
 }
@@ -77,7 +77,7 @@ h1 {
 input[type=text]:focus {
 /*  width: 235px;*/
   border: 3px ;
-  width: 321px;
+  width: 100%;
   outline-color: grey;
 }
 
