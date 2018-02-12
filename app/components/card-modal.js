@@ -14,7 +14,7 @@ export default Ember.Component.extend({
       }
       this.set('enabled', false);
     },
-    toggleEdit: function() {
+    toggleEditName: function() {
       this.toggleProperty('isEditingName');
     }, 
     toggleEditDescription: function() {
