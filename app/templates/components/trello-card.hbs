@@ -1,9 +1,19 @@
 {{!-- Loop through each card --}}
 {{#each list.cards as |card|}}
-  <div class="card-sm">
+
+{{!-- Populates modal --}}
+{{#if enabled}}
+  {{card-modal
+    enabled=enabled
+    title=card.name
+    body=card.description
+  }}
+{{/if}}
+
+  <div class="card-sm" {{action 'openModal'}}>
     {{card.name}}
-    <div class='pull-right' {{action 'deleteCard' card}}>
+    {{!-- <div class='pull-right' {{action 'deleteCard' card}}>
       <span class='glyphicon glyphicon-remove' aria-hidden="true"></span>
-    </div>
+    </div> --}}
   </div>
 {{/each}}
