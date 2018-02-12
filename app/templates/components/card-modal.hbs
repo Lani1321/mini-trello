@@ -10,7 +10,7 @@
       {{else}}
         {{title}} <i {{ action 'toggleEditName'}} class="glyphicon glyphicon-pencil"></i>
       {{/if}}
-    </div>
+    </div>s
 
     {{!-- Edit Card Description --}}
     <div class="modal-body">
@@ -19,7 +19,7 @@
           {{input value=card.description placeholder="Card Description"}}
         </form>
       {{else}}
-        <div class="modal-description"><i {{ action 'toggleEditDescription'}} class="glyphicon glyphicon-align-left"></i>        {{body}}</div>
+        <div class="modal-description"><i {{ action 'toggleEditDescription'}} class="glyphicon glyphicon-align-left"></i>{{body}}</div>
       {{/if}}
     </div>
     <div class="modal-footer">
