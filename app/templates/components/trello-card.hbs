@@ -1,18 +1,23 @@
-{{!-- Loop through each card --}}
-{{#each list.cards as |card|}}
+{{#ui-draggable connectToSortable=".draggable-target"}}
 
-{{!-- Populates modal --}}
-{{#if enabled}}
-  {{card-modal
-    enabled=enabled
-    title=card.name
-    body=card.description
-    card=card
-    list=list
-  }}
-{{/if}}
+  {{!-- Loop through each card --}}
+  {{#ui-sortable class="draggable-target" class="connected" connectWith=".connected" content=list.cards as |card|}}
+  {{!-- {{#each list.cards as |card|}} --}}
 
-  <div class="card-sm" id="remove-default-card-{{card.id}}" {{action 'openModal'}}>
-    <div class='card-name'>{{card.name}}</div>
-  </div>
-{{/each}}
+  {{!-- Populates modal --}}
+  {{#if enabled}}
+    {{card-modal
+      enabled=enabled
+      title=card.name
+      body=card.description
+      card=card
+      list=list
+    }}
+  {{/if}}
+
+    <div class="card-sm" id="remove-default-card-{{card.id}}" {{action 'openModal'}}>
+      <div class='card-name'>{{card.name}}</div>
+    </div>
+  {{!-- {{/each}} --}}
+  {{/ui-sortable}}
+{{/ui-draggable}}  

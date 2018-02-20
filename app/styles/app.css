@@ -38,7 +38,7 @@ h1 {
 .card {
   background-color: #FEF3F1;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  height: 300px;
+  min-height: 300px;
   text-align: center;
 }
 
@@ -46,7 +46,7 @@ h1 {
   background-color: #FEF3F1;
   color: grey;
   padding-top: 20px;
-  overflow: scroll;
+  /*overflow: scroll;*/
 }
 
 .card-name {
@@ -59,7 +59,17 @@ h1 {
   margin: 13px;
   border-radius: 5px;
   background: white;
-  overflow: scroll;
+  /*overflow: scroll;*/
+}
+
+.card-sm:focus {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  height: 50px;
+  margin: 13px;
+  border-radius: 5px;
+  background: white;
+  outline-color: grey;
+  /*overflow: scroll;*/
 }
 
 .new-list-box input[type=text] {
@@ -168,3 +178,23 @@ input[type=text]{
   text-align: left;
 }
 
+.ui-sortable-handle {
+  width: 288px;
+  margin-left: -26px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  height: 50px;
+  border-radius: 5px;
+  background: white;
+  /*overflow: scroll;*/
+}
+
+.ui-sortable-handle:active{
+  width: 288px;
+  margin-left: -26px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  height: 50px;
+  border-radius: 5px;
+  background: white;
+  opacity: 0.8;
+  /*overflow: scroll;*/
+}
